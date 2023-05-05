@@ -1,9 +1,10 @@
-.available-devices {
+.onde-assistir {
   padding: 5.6vw;
+  padding-top: 0;
 
   h2 {
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 56px;
   }
 
   &__list {
@@ -29,6 +30,8 @@
 
       img {
         max-width: 100%;
+        max-height: 100px;
+        border-radius: 8px;
       }
     }
   }
