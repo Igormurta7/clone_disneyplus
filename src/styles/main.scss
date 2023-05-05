@@ -1,8 +1,9 @@
 @use "variaveis";
 @use "hero";
-@use "galeria";
-@use "elenco";
-@use "ondeassistir";
+@use "shows";
+@use "plans";
+@use "available-devices";
+@use "faq";
 @use "footer";
 @use "header";
 
@@ -108,7 +109,7 @@ body {
   border-radius: 4px;
   border: 1px solid variaveis.$corDeFundoBotaoPrimario;
   text-decoration: none;
-  padding: 8px;
+  padding: 8px 14px;
   letter-spacing: 1px;
 
   &:hover {
@@ -135,36 +136,20 @@ body {
       color: variaveis.$corDeFundo;
     }
   }
-
-  @media (max-width: 768px) {
-    font-size: 10px;
-    height: 40px;
-  }
-}
-
-.elenco {
-  padding-top: 56px;
-  text-align: center;
 }
 
 .image-text-section {
   padding: 5.6vw;
-  padding-bottom: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
 
   @media (max-width: 768px) {
     display: block;
-    text-align: center;
-    margin-bottom: 56px;
-    margin-top: 0;
   }
 
   img {
     max-width: 100%;
-    max-height: 400px;
-    margin: 0 auto;
   }
 
   &__text-container {
@@ -172,11 +157,6 @@ body {
 
     h2 {
       margin-bottom: 24px;
-
-      @media (max-width: 768px) {
-        text-align: center;
-        margin-bottom: 12px;
-      }
     }
   }
 
@@ -186,7 +166,6 @@ body {
 
     img {
       width: 100%;
-      max-height: 1000px;
     }
 
     &__text_container {
